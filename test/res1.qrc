@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>atfp3.png</file>
+    <file>atfp2.png</file>
+  </qresource>
+</RCC>

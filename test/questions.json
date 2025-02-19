@@ -1,0 +1,32 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": [
+            "Paris",
+            "Rome",
+            "Berlin",
+            "Madrid"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What is 5 + 7?",
+        "options": [
+            "12",
+            "13",
+            "14",
+            "15"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "le piston",
+        "options": [
+            "rond",
+            "carre",
+            "triangle",
+            "rectangle"
+        ],
+        "answer": 1
+    }
+]

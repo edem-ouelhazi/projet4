@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>811</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>811</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Styling for the Main Form */
+QWidget#Form {
+    background: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 1, y2: 0, 
+        stop: 0 #d9fdd3, 
+        stop: 1 #a8e6cf
+    ); /* Gradient background */
+    border: 1px solid #81c784; /* Subtle green border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+/* Labels with a modern font and green text */
+QLabel {
+    color: #388e3c; /* Dark green text */
+    font-size: 15px; /* Modern font size */
+    font-weight: 600; /* Semi-bold text for clarity */
+    margin-bottom: 8px; /* Spacing below labels */
+}
+
+/* Input fields with sleek borders and hover effects */
+QLineEdit {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #81c784; /* Subtle green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 8px 12px; /* Padding inside the input */
+    font-size: 14px; /* Font size for inputs */
+    color: #2e7d32; /* Dark green text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4caf50; /* Bright green border on focus */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Subtle glow on focus */
+}
+
+/* Buttons with modern gradients, hover, and pressed effects */
+QPushButton {
+    background: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 1, y2: 1, 
+        stop: 0 #8bc34a, 
+        stop: 1 #66bb6a
+    ); /* Gradient green background */
+    color: white; /* White text */
+    border: none; /* No visible border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px 20px; /* Comfortable padding */
+    font-size: 15px; /* Font size for buttons */
+    font-weight: 600; /* Bold text for buttons */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transition: all 0.3s ease; /* Smooth animations */
+}
+
+QPushButton:hover {
+    background: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 1, y2: 1, 
+        stop: 0 #9ccc65, 
+        stop: 1 #81c784
+    ); /* Brighter gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 1, y2: 1, 
+        stop: 0 #6e9d3c, 
+        stop: 1 #4caf50
+    ); /* Darker gradient on press */
+    transform: scale(0.98); /* Slight shrink effect */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+QPushButton:disabled {
+    background-color: #c8e6c9; /* Muted green for disabled */
+    color: #9e9e9e; /* Muted text */
+    box-shadow: none; /* No shadow */
+    transform: none; /* No animation */
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>791</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red;</string>
+   </property>
+   <property name="text">
+    <string>Remarque importante : Lorsque vous appuyez sur le bouton de démarrage, l’examen démarre automatiquement</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/newPrefix/atfp2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>280</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #8bc34a, 
+        stop: 1 #4caf50
+    ); /* Green gradient background */
+    color: white; /* White text */
+    border: none; /* No border for clean look */
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px 20px; /* Add comfortable padding */
+    font-size: 15px; /* Slightly larger font size */
+    font-weight: 600; /* Semi-bold for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #a5d86e, 
+        stop: 1 #66bb6a
+    ); /* Brighter green gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #6e9d3c, 
+        stop: 1 #388e3c
+    ); /* Darker green gradient when pressed */
+    transform: scale(0.95); /* Shrink slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+QPushButton:disabled {
+    background-color: #d3d3d3; /* Light grey for disabled */
+    color: #9e9e9e; /* Muted text */
+    box-shadow: none; /* Remove shadow */
+    transform: none; /* No transformations */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Stagaire</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="formateur">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>360</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #5ec4ff, 
+        stop: 1 #0096c7
+    ); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* No border for clean look */
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px 20px; /* Add comfortable padding */
+    font-size: 15px; /* Slightly larger font size */
+    font-weight: 600; /* Semi-bold for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #81e0ff, 
+        stop: 1 #00b4d8
+    ); /* Brighter gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(
+        spread: pad, 
+        x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #3cb3db, 
+        stop: 1 #0077a5
+    ); /* Darker gradient when pressed */
+    transform: scale(0.95); /* Shrink slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+QPushButton:disabled {
+    background-color: #d3d3d3; /* Light grey for disabled */
+    color: #9e9e9e; /* Muted text */
+    box-shadow: none; /* Remove shadow */
+    transform: none; /* No transformations */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Formateur</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="moon">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>430</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ok </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>430</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res1.qrc"/>
+ </resources>
+ <connections/>
+</ui>

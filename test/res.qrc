@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="image">
+    <file>atfp1.png</file>
+    <file>ftp.png</file>
+  </qresource>
+</RCC>
